@@ -1,17 +1,118 @@
 {
-    "risks": [
-      {
-        "id": "low_sleep",
-        "name": "Insufficient Sleep",
-        "description": "Sleep duration below optimal levels can impact cognitive function and immune system.",
-        "solution": "Aim for 7–8 hours per night and establish a consistent sleep schedule."
-      },
-      {
-        "id": "high_bp",
-        "name": "High Blood Pressure",
-        "description": "Your blood pressure readings are too high.",
-        "solution": "Reduce sodium intake and continue daily exercise routine."
-      }
-    ]
-  }
-  
+  "risks": [
+    {
+      "id": "low_sleep",
+      "name": "Insufficient Sleep",
+      "description": "Sleep duration below optimal levels can impact cognitive function and immune system.",
+      "solution": "Aim for 7–8 hours per night and establish a consistent sleep schedule."
+    },
+    {
+      "id": "high_bp",
+      "name": "High Blood Pressure",
+      "description": "Your blood pressure readings are too high.",
+      "solution": "Reduce sodium intake and continue daily exercise routine."
+    },
+    {
+      "id": "obesity",
+      "name": "Obesity Risk",
+      "description": "High BMI and body fat percentage indicate a risk of obesity-related conditions.",
+      "solution": "Focus on balanced diet, calorie tracking and consistent physical activity."
+    },
+    {
+      "id": "underweight",
+      "name": "Underweight Risk",
+      "description": "Your weight is too low for your height, which may lead to nutrient deficiencies or fatigue.",
+      "solution": "Increase healthy calorie intake and monitor progress weekly."
+    },
+    {
+      "id": "low_protein",
+      "name": "Low Protein Intake",
+      "description": "Protein intake is below optimal levels, potentially impairing muscle recovery and hormone function.",
+      "solution": "Aim for 1.5–2g protein per kg body weight, depending on activity."
+    },
+    {
+      "id": "junk_food_high",
+      "name": "High Junk Food Consumption",
+      "description": "Frequent junk food consumption detected.",
+      "solution": "Reduce ultra-processed food intake, especially late at night and during stress phases."
+    },
+    {
+      "id": "sugar_excess",
+      "name": "Excess Sugar Intake",
+      "description": "Your daily sugar intake exceeds recommended limits.",
+      "solution": "Cut down on sugary drinks, sweets and hidden sugars in packaged foods."
+    },
+    {
+      "id": "low_activity",
+      "name": "Too Little Physical Activity",
+      "description": "Cardio and step count levels are consistently low.",
+      "solution": "Aim for at least 7000 steps daily and 2–3 cardio sessions per week."
+    },
+    {
+      "id": "no_strength",
+      "name": "No Strength Training",
+      "description": "Lack of resistance training can lead to muscle loss and metabolic slowdown.",
+      "solution": "Include full-body strength workouts at least 2 times a week."
+    },
+    {
+      "id": "poor_diet_score",
+      "name": "Low Food Quality Score",
+      "description": "Your diet score indicates a poor nutritional profile.",
+      "solution": "Increase intake of whole foods, vegetables, lean proteins, and reduce junk."
+    },
+    {
+      "id": "low_sleep_quality",
+      "name": "Low Sleep Continuity",
+      "description": "Your sleep is often interrupted or restless.",
+      "solution": "Establish a relaxing bedtime routine, limit screen time before bed."
+    },
+    {
+      "id": "poor_mood",
+      "name": "Low Mood After Sleep",
+      "description": "You often wake up feeling unrefreshed.",
+      "solution": "Improve sleep hygiene and evaluate stress levels and screen exposure before bed."
+    },
+    {
+      "id": "low_kcal",
+      "name": "Too Few Calories",
+      "description": "Calorie intake is too low over multiple days, risking undernourishment.",
+      "solution": "Ensure sufficient intake to support your activity level and growth."
+    },
+    {
+      "id": "high_kfa",
+      "name": "High Body Fat Percentage",
+      "description": "Your KFA (Körperfettanteil) is above optimal range for your age and sex.",
+      "solution": "Focus on reducing sugar and increasing physical activity, especially strength training."
+    },
+    {
+      "id": "hrv_concern",
+      "name": "Abnormal Resting Heart Rate",
+      "description": "Your resting heart rate is unusually high or low, which may indicate stress or cardiovascular issues.",
+      "solution": "Improve sleep, nutrition and reduce stress. See a doctor if persistently abnormal."
+    },
+    {
+      "id": "bp_fluctuation",
+      "name": "Blood Pressure Instability",
+      "description": "Your systolic or diastolic pressure fluctuates too much.",
+      "solution": "Monitor sodium and hydration levels, track stress and activity patterns."
+    },
+    {
+      "id": "no_exercise_days",
+      "name": "Multiple Days Without Exercise",
+      "description": "Several consecutive days without any physical activity detected.",
+      "solution": "Build a daily movement habit – even short walks help maintain metabolic health."
+    },
+    {
+      "id": "low_step_trend",
+      "name": "Step Count Dropping",
+      "description": "Your weekly step average is decreasing.",
+      "solution": "Set small goals to increase walking (e.g. Go for a 30 min walk)."
+    },
+    {
+      "id": "protein_fluctuation",
+      "name": "Inconsistent Protein Intake",
+      "description": "Large daily fluctuations in protein can impair muscle retention.",
+      "solution": "Keep daily protein fairly stable by planning meals in advance."
+    }
+  ]
+}

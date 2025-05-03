@@ -1,0 +1,26 @@
+console.log('adsf')
+let username =  window.location.href.substring(window.location.href.lastIndexOf("/") + 1);
+
+fetch(`/api/risks/${username}`)
+  .then(res => res.json())
+  .then(risks => {
+    const container = document.querySelector(".health-risks");
+    container.innerHTML = ""; // vorherige Inhalte löschen
+
+    if (risks.length === 0) {
+      container.innerHTML = "<p>Es liegen aktuell keine akuten Risiken vor.</p>";
+    } else {
+      risks.forEach(risk => {
+        const div = document.createElement("div");
+        div.classList.add("risk-item");
+        div.innerHTML = `
+          <div class="risk-name">${risk.name}</div>
+          <div class="risk-description">${risk.description}</div>
+          <div class="risk-solution">
+              <span class="solution-title">Solution:</span> ${risk.solution}
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+  });
