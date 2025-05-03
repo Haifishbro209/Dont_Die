@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don't Die App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+
 </head>
 <body>
     <div class="header">
@@ -13,8 +14,8 @@
             <div class="nd">don't die</div>
         </div>
         <div class="score-container">
-            <div class="score-label">Vitality</div>
-            <div class="score">100%</div>
+            <div class="score-label">Overall Vitality</div>
+            <div class="score">87%</div>
         </div>
     </div>
     
@@ -23,10 +24,11 @@
             <div class="grid-item">
                 <div class="icon-circle">
                     <div class="pulse"></div>
-                    <div class="icon">100%</div>
+                    <div class="icon">85%</div>
                 </div>
                 <div class="label">SPORT</div>
                 <div class="stats">+15% today</div>
+                <div class="last-entry">Last: 30min jogging</div>
                 <div class="chart-container">
                     <div class="chart-base-line"></div>
                     <div class="chart-line">
@@ -46,7 +48,6 @@
                                 <circle cx="45" cy="10" style="--i: 3"></circle>
                                 <circle cx="60" cy="15" style="--i: 4"></circle>
                                 <circle cx="75" cy="5" style="--i: 5"></circle>
-                                <circle cx="90" cy="8" style="--i: 6"></circle>
                                 <circle cx="100" cy="7" style="--i: 7"></circle>
                             </g>
                         </svg>
@@ -57,10 +58,11 @@
             <div class="grid-item">
                 <div class="icon-circle">
                     <div class="pulse"></div>
-                    <div class="icon">100%</div>
+                    <div class="icon">92%</div>
                 </div>
                 <div class="label">HEALTH</div>
                 <div class="stats">+8% today</div>
+                <div class="last-entry">Last: BP 118/75</div>
                 <div class="chart-container">
                     <div class="chart-base-line"></div>
                     <div class="chart-line">
@@ -80,7 +82,6 @@
                                 <circle cx="45" cy="9" style="--i: 3"></circle>
                                 <circle cx="60" cy="10" style="--i: 4"></circle>
                                 <circle cx="75" cy="3" style="--i: 5"></circle>
-                                <circle cx="90" cy="3" style="--i: 6"></circle>
                                 <circle cx="100" cy="4" style="--i: 7"></circle>
                             </g>
                         </svg>
@@ -91,10 +92,11 @@
             <div class="grid-item">
                 <div class="icon-circle">
                     <div class="pulse"></div>
-                    <div class="icon">100%</div>
+                    <div class="icon">78%</div>
                 </div>
                 <div class="label">SLEEP</div>
                 <div class="stats">-3% today</div>
+                <div class="last-entry">Last: 6h 42min</div>
                 <div class="chart-container">
                     <div class="chart-base-line"></div>
                     <div class="chart-line">
@@ -114,7 +116,6 @@
                                 <circle cx="45" cy="12" style="--i: 3"></circle>
                                 <circle cx="60" cy="15" style="--i: 4"></circle>
                                 <circle cx="75" cy="20" style="--i: 5"></circle>
-                                <circle cx="90" cy="15" style="--i: 6"></circle>
                                 <circle cx="100" cy="15" style="--i: 7"></circle>
                             </g>
                         </svg>
@@ -125,10 +126,11 @@
             <div class="grid-item">
                 <div class="icon-circle">
                     <div class="pulse"></div>
-                    <div class="icon">100%</div>
+                    <div class="icon">93%</div>
                 </div>
                 <div class="label">NUTRITION</div>
                 <div class="stats">+5% today</div>
+                <div class="last-entry">Last: 2100 kcal</div>
                 <div class="chart-container">
                     <div class="chart-base-line"></div>
                     <div class="chart-line">
@@ -148,7 +150,6 @@
                                 <circle cx="45" cy="13" style="--i: 3"></circle>
                                 <circle cx="60" cy="14" style="--i: 4"></circle>
                                 <circle cx="75" cy="18" style="--i: 5"></circle>
-                                <circle cx="90" cy="12" style="--i: 6"></circle>
                                 <circle cx="100" cy="10" style="--i: 7"></circle>
                             </g>
                         </svg>
@@ -156,7 +157,26 @@
                 </div>
             </div>
         </div>
+        
+        <div class="health-risks">
+            <div class="risks-title">Health Risks & Recommendations</div>
+            
+            <div class="risk-item">
+                <div class="risk-name">Insufficient Sleep</div>
+                <div class="risk-description">Sleep duration below optimal levels can impact cognitive function and immune system</div>
+                <div class="risk-solution">
+                    <span class="solution-title">Solution:</span> Aim for 7-8 hours per night and establish a consistent sleep schedule
+                </div>
+            </div>
+            
+            <div class="risk-item">
+                <div class="risk-name">High Blood Pressure Trend</div>
+                <div class="risk-description">Your blood pressure readings show an increasing trend over the past week</div>
+                <div class="risk-solution">
+                    <span class="solution-title">Solution:</span> Reduce sodium intake and continue daily exercise routine
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>

@@ -4,6 +4,15 @@ from database import *
 
 app = Flask(__name__)
 
+@app.route("/api/login",methods=['GET', 'POST'])
+def login_api():
+    if request.method == 'POST':
+        email = request.form['email']
+        add_user(email)
+        return redirect(url_for('overview',user_name = email))
+    else:
+        return redirect(url_for("login"))  
+    
 @app.route("/")
 def index():
     
