@@ -1,0 +1,17 @@
+{
+    "risks": [
+      {
+        "id": "low_sleep",
+        "name": "Insufficient Sleep",
+        "description": "Sleep duration below optimal levels can impact cognitive function and immune system.",
+        "solution": "Aim for 7–8 hours per night and establish a consistent sleep schedule."
+      },
+      {
+        "id": "high_bp",
+        "name": "High Blood Pressure",
+        "description": "Your blood pressure readings are too high.",
+        "solution": "Reduce sodium intake and continue daily exercise routine."
+      }
+    ]
+  }
+  
