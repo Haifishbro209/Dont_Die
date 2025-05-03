@@ -13,6 +13,11 @@ def login_api():
     else:
         return redirect(url_for("login"))  
 
+@app.route("/api/health/<username>", methods=['GET', 'POST'])
+def analyse_health_data():
+    #return redirect url save in db 
+    # V the js fetch to this api endpoint
+    pass
 @app.route("/api/risks/<username>/")
 def user_risks(username):
     with open("risks.json") as f:
@@ -31,7 +36,15 @@ def index():
 
 @app.route("/health/<username>")
 def sign_up(username):
-    return render_template("health.html")
+    data = {
+    "weight": 70,              # in kg
+    "height": 175,             # in cm
+    "body_fat": 35.0,          # in %
+    "systolic": 120,           # mmHg
+    "diastolic": 80,           # mmHg
+    "resting_hr": 65           # bpm
+    }
+    return render_template("health.html",data = data)
 
 
 @app.route("/login")

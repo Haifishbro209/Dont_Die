@@ -24,3 +24,26 @@ fetch(`/api/risks/${username}`)
       });
     }
   });
+
+function onSportClick() {
+  alert("Du hast den SPORT-Kasten geklickt!");
+}
+
+function onHealthClick() {
+  window.location.href = `/health/${username}`;
+}
+
+function onSleepClick() {
+  alert("Du hast den SLEEP-Kasten geklickt!");
+}
+
+// Funktion für NUTRITION
+function onNutritionClick() {
+  alert("Du hast den NUTRITION-Kasten geklickt!");
+}
+
+// Event-Listener hinzufügen
+document.getElementById('sport').addEventListener('click', onSportClick);
+document.getElementById('health').addEventListener('click', onHealthClick);
+document.getElementById('sleep').addEventListener('click', onSleepClick);
+document.getElementById('nutrition').addEventListener('click', onNutritionClick);
